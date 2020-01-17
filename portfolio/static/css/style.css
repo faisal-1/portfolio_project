@@ -1,0 +1,76 @@
+body {
+    background-color: rgb(242, 241, 248);
+}
+
+nav {
+    background-color: white;
+}
+
+.nav-link,
+.navbar-brand {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.square-100 {
+    width: 150px;
+    height: 150px;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.border {
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, .125);
+}
+
+.p1 {
+    padding: .5rem;
+}
+
+img {
+    max-width: 100%;
+    border: none;
+}
+
+.jumbotron {
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+    padding: 9rem 1rem;
+    background: -webkit-linear-gradient(to right, #1BADD8, #00003E);
+    background: linear-gradient(to right, #1BADD8, #00003E);
+}
+
+
+.btn-primary {
+    color: #fff;
+    background-color: #2568EF;
+    border-color: #2568EF;
+    box-shadow: none;
+}
+
+h5,h4 {
+    font-family: 'Permanent Marker', cursive;
+}
+
+.border-bottom {
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(255, 255, 255);
+}
+
+hr {
+    border: 0;
+    height: 4px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(8, 11, 56), rgba(0, 0, 0, 0));
+}
+
+footer {
+    background-color: white;
+}
