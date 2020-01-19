@@ -14,4 +14,4 @@ class Projects(models.Model):
         return self.title[:15]
 
     def url(self):
-        return self.urlfield[:10]
+        return self.urlfield

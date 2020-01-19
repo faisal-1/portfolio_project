@@ -1,29 +1,36 @@
 {% load static %}
 <header>
-    <nav class="navbar navbar-expand-lg border-bottom navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top mynav">
         <div class="container">
-            <a class="navbar-brand" href="{% url 'home' %}"><img height="50" weight="130" src="{% static 'images/logo.png' %}">Faisal's
-                Portfolio</a>
+            <a class="navbar-brand" id="navbar-brand" href="{% url 'home' %}"><img height="50" weight="130"
+                    src="{% static 'images/my.png' %}"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'home' %}">Home</a>
+                    <li class="nav-item active">
+                        <h4><b><a class="nav-link" href="{% url 'home' %}">Home<span
+                                        class="sr-only">(current)</span></a></b>
+                        </h4>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://www.linkedin.com/in/mohamed-faisal-250466154/" target="_blank">Linkedin</a>
+                        <h4><b><a class="nav-link" href="https://www.linkedin.com/in/mohamed-faisal-250466154/"
+                                    target="_blank">Linkedin</a></h4></b>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://github.com/faisal-1" target="_blank">Github</a>
+                        <h4><b><a class="nav-link" href="https://github.com/faisal-1" target="_blank">Github</a>
+                        </h4>
+                        </b>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% static 'pdf/resume.pdf' %}" target="_blank">Resume</a>
+                        <h4><b><a class="nav-link" href="{% static 'pdf/resume.pdf' %}" target="_blank">Resume</a>
+                        </h4>
+                        </b>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'about' %}">About</a>
+                        <h4><b><a class="nav-link" href="{% url 'about' %}">About</a></h4></b>
                     </li>
                 </ul>
             </div>

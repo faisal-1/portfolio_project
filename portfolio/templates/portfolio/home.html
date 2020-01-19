@@ -2,41 +2,74 @@
 {% load static %}
 {% block title %}Faisal's Portfolio | Home{% endblock %}
 {% block content %}
+
 <div class="jumbotron border-bottom text-center">
     <div class="container">
         <img class=" border bg-white p1 border-light-gray circle square-100 lazyloaded"
-            src="{% static 'images/faisal.jpg' %}"><br><br>
-        <h5>Mohamed Faisal</h5>
-        <h4>python-django-developer</h4>
-        <a href="mailto:faisal.programmer369@gmail.com" class="btn btn-primary">Hire</a>
+            src="{% static 'images/photo.jpg' %}"><br><br>
+        <h4 id="name">Mohamed Faisal</h4>
+        <h7>python - django - developer</h7><br><br>
+        <a href="mailto:faisal.programmer369@gmail.com" type="button" class="btn btn-primary">Hire</a>
     </div>
 </div>
-<hr>
-<h5 class="text-center">Projects</h5>
-<hr><br>
 
-{% for project in projects %}
+<hr>
+<h3 class="text-center">My Projects</h3>
+<hr>
+
 <div class="container">
     <div class="row">
+        {% for project in projects %}
         <div class="col-md-6">
-            <img height="250px" width="500px" src="{% static 'images/faisal.jpg' %}" class="card-img-top" alt="...">
             <div class="card mb-4 shadow-sm">
+                <img width="100%" height="300" src="{{ project.image.url }}" alt="project-image">
                 <div class="card-body">
-                    <h3>{{ project.title }}</h3>
-                    <p class="card-text">{{ project.summary }}</p>
+                    <h5>{{ project.title }}</h5>
+                    <p class="card-text">{{ project.summary|truncatechars:190 }}</p>
                     <div class="d-flex justify-content-between align-items-center">
                         <div class="btn-group">
-                            <a href="{{ project.url }}"><button type="button" class="btn btn-primary">View</button></a>
+                            <a href="{{ project.url }}"><button class="blue-button">View</button></a>
                         </div>
-                        <small class="text-muted">Github : <a href="#">github</a></small>
+                        <small class="text-muted">Github : <a
+                                href="{{ project.github }}">{{ project.github|truncatechars:19 }}</a></small>
                     </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+<br>
+<hr>
+<h3 class="text-center">Skills</h3>
+<hr><br>
+
+<div class="container">
+    <div class="card">
+        <div class="card-content">
+            <div class="row">
+                <div class="col">
+                    <img height="85px" src="{% static 'images/python.png'%}" alt="">
+                </div>
+                <div class="col">
+                    <img height="85px" width="110px" src="{% static 'images/django.jpg'%}" alt="">
+                </div>
+                <div class="col">
+                    <img height="85px" src="{% static 'images/html.png'%}" alt="">
+                </div>
+                <div class="col">
+                    <img height="85px" src="{% static 'images/css.png'%}" alt="">
+                </div>
+                <div class="col">
+                    <img height="75px" src="{% static 'images/boot.png'%}" alt="">
+                </div>
+                <div class="col">
+                    <img height="78px" width="85px" src="{% static 'images/hero.jpg'%}" alt="">
                 </div>
             </div>
         </div>
     </div>
 </div>
-{% endfor %}
-
 
 
 {% endblock %}

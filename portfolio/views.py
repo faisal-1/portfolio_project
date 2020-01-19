@@ -4,8 +4,9 @@ from . models import Projects
 
 
 def home(request):
-    projects = Projects.objects.all()
+    projects = Projects.objects.all().order_by('-title')
     return render(request, 'portfolio/home.html', {'projects': projects})
+
 
 def about(request):
     return render(request, 'portfolio/about.html')

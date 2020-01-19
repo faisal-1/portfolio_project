@@ -1,14 +1,50 @@
 body {
-    background-color: rgb(242, 241, 248);
+    background-color: rgb(253, 253, 253);
+    /* background-color: #f4f6f8; */
 }
 
-nav {
+.mynav {
+    background-color: white !important;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-bottom-color: rgb(6, 6, 202);
+}
+
+.mynav a {
+    margin-right: 10px;
     background-color: white;
+    color: rgb(0, 0, 177) !important;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 17px;
+    font-family: "open-sans";
+    transition: 0.3s ease;
+
 }
 
-.nav-link,
-.navbar-brand {
+.mynav a:hover {
+    border-bottom: 3px solid rgb(0, 0, 199);
+    border-top: 3px solid rgb(0, 0, 199);
+}
+
+
+
+#navbar-brand {
     font-family: 'Permanent Marker', cursive;
+    color: rgb(110, 90, 0);
+}
+
+h3,
+h5 {
+
+    font-family: 'Permanent Marker', cursive;
+    color: rgb(0, 0, 167);
+}
+
+#name {
+    color: white;
 }
 
 .square-100 {
@@ -24,53 +60,84 @@ nav {
     border-radius: 50%;
 }
 
-.border {
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgba(0, 0, 0, .125);
-}
-
 .p1 {
     padding: .5rem;
-}
-
-img {
-    max-width: 100%;
-    border: none;
 }
 
 .jumbotron {
     font-family: 'Permanent Marker', cursive;
     color: white;
-    padding: 9rem 1rem;
-    background: -webkit-linear-gradient(to right, #1BADD8, #00003E);
-    background: linear-gradient(to right, #1BADD8, #00003E);
+    padding: 7rem;
+    padding-bottom: 25px;
+    /* background: -webkit-linear-gradient(to right, rgb(6, 14, 126), rgb(0, 0, 54));
+    background: linear-gradient(to right, rgb(6, 13, 112), rgb(1, 1, 39)); */
+    background-image: url(https://cdn130.picsart.com/317111400046201.jpg?r1024x1024);
+    background-size: cover;
+
+
 }
 
 
 .btn-primary {
     color: #fff;
-    background-color: #2568EF;
-    border-color: #2568EF;
+    background-color: rgb(0, 0, 133);
+    border-color: rgb(0, 0, 134);
     box-shadow: none;
+
 }
 
-h5,h4 {
-    font-family: 'Permanent Marker', cursive;
+.blue-button {
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    font-family: "europa", sans-serif;
+    border-radius: 30px;
+    background-color: rgb(0, 0, 133);
+    border-color: rgb(0, 0, 133);
+    color: white;
+
 }
 
-.border-bottom {
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-color: rgb(255, 255, 255);
+.blue-button:hover {
+    text-decoration: none;
+    background-color: rgb(0, 0, 199);
+    border-color: rgb(0, 0, 199);
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
 }
 
 hr {
     border: 0;
     height: 4px;
-    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(8, 11, 56), rgba(0, 0, 0, 0));
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgb(0, 0, 141), rgba(0, 0, 0, 0));
 }
 
 footer {
-    background-color: white;
+    background-color: #ffffff;
+    color: rgb(0, 0, 141);
+    height: 55px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: rgb(6, 6, 202);
+
+}
+
+.navbar-toggler-icon {
+    background-image: url();
+    height: 35px;
+    width: 30px;
+
+}
+
+.card {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 50px;
+    padding: 25px;
+}
+
+.flow-text {
+    font-size: 1.68rem;
+    font-weight: 300;
 }
